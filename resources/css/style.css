@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("resources\fonts\IBMPlexSans-Regular.ttf") format("truetype");
+}
+
+html {
+  background-color: #2667ff;
+}
+
+body {
+  background-color: white;
+  margin-left: 150px;
+  margin-right: 100px;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+section {
+  margin: 20px;
+  border-bottom: 1px solid black;
+}
