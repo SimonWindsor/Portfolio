@@ -14,7 +14,14 @@ body {
   margin: auto;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  padding-bottom: 80px;
   font-family: "Plex Sans", Arial, sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 800px;
+  top: 0px;
 }
 
 #header-bar {
@@ -24,30 +31,63 @@ body {
   margin: 20px;
 }
 
-#menu  {
-  position: relative;
-  left: 85%;
-  width: 120px;
-  transition: display 1s;
-}
-
-.closed {
-  display: none;
-}
-
-.open {
-  display: block
-}
-
-nav ul li {
-  display: inline-block;
-}
-
 #hamburger {
   display: inline;
   width: 40px;
   height: 40px;
   cursor: pointer;
+  z-index: 1;
+}
+
+#menu  {
+  position: relative;
+  left: 80%;
+  width: 120px;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+.initial {
+  display: none;
+}
+
+.closed li {
+  opacity: 0;
+  transform: rotateX(-180deg);
+  animation: 'close-menu' 700ms ease-in-out;
+}
+
+.open li {
+  animation: 'open-menu' 700ms ease-in-out;
+}
+
+@keyframes open-menu {
+  0% {
+    opacity: 0;
+    transform: rotateX(-180deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes close-menu {
+  0% {
+    opacity: 100%;
+    transform: rotateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(-180deg);
+  }
+}
+
+main {
+  position: relative;
+  top: 100px;
 }
 
 section {
