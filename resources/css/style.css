@@ -1,27 +1,53 @@
+/* Define Fonts */
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("resources\fonts\IBMPlexSans-Regular.ttf") format("truetype");
+  font-family: "Plex Sans";
+  src: url("../fonts/IBMPlexSans-Regular.ttf") format("truetype");
 }
 
-html {
+/* html {
   background-color: #2667ff;
-}
+} */
 
 body {
   background-color: white;
-  margin-left: 150px;
-  margin-right: 100px;
-  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  width: 800px;
+  margin: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-family: "Plex Sans", Arial, sans-serif;
 }
 
-header {
+#header-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 20px;
+}
+
+#menu  {
+  position: relative;
+  left: 85%;
+  width: 120px;
+  transition: display 1s;
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: block
 }
 
 nav ul li {
   display: inline-block;
+}
+
+#hamburger {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 section {
