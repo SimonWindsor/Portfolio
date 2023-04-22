@@ -42,14 +42,17 @@ nav ul li {
   color: black;
   cursor: pointer;
   width: 25%;
-  height: 3rem;
+  height: 4rem;
+  font-size: 2rem;
+  line-height: 4rem;
   text-align: center;
-  padding: 1rem 0 1rem 0;
   box-sizing: border-box;
 }
 
 nav a {
+  display: block;
   text-decoration: none;
+  width: 100%;
 }
 
 nav ul li:hover {
@@ -67,7 +70,6 @@ nav a:visited{
 .dropdown:hover ul {
   position: relative;
   display: block;
-  top: 0.25rem;
 }
 
 .dropdown ul li {
