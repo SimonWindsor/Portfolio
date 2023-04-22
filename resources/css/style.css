@@ -1,37 +1,45 @@
 /* Define Fonts */
 @font-face {
+  font-family: "Chivo";
+  src: url("../fonts/Chivo-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Indie Flower";
+  src: url("../fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Plex Sans";
   src: url("../fonts/IBMPlexSans-Regular.ttf") format("truetype");
 }
 
-/* html {
-  background-color: #2667ff;
-} */
-
 body {
   background-color: white;
-  width: 800px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   border-left: 1px solid black;
   border-right: 1px solid black;
   font-family: "Plex Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 nav ul {
   padding: 0;
+  margin: 0;
   list-style: none;
   z-index: 10;
 }
 
-nav a {
-  text-decoration: none;
-}
-
 nav ul li {
   float: left;
-  background-color: black;
-  color: white;
+  background-color: #c6d175;
+  color: black;
   cursor: pointer;
   width: 25%;
   height: 3rem;
@@ -40,9 +48,16 @@ nav ul li {
   box-sizing: border-box;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav ul li:hover {
-  background-color: white;
-  color: black;
+  background-color: #FEFAE0;
+}
+
+nav a:visited{
+  color: inherit;
 }
 
 .dropdown ul {
@@ -52,16 +67,17 @@ nav ul li:hover {
 .dropdown:hover ul {
   position: relative;
   display: block;
-  top: 0.75rem;
+  top: 0.25rem;
 }
 
 .dropdown ul li {
   width: 100%;
+  color: black;
   animation: open-menu 800ms ease-in-out;
 }
 
 .dropdown ul li:hover {
-  background-color: blue;
+  background-color: FEFAE0;
 }
 
 @keyframes open-menu {
@@ -75,6 +91,7 @@ nav ul li:hover {
   }
 }
 
+/* I am not currently using this */
 @keyframes close-menu {
   0% {
     opacity: 100%;
@@ -86,12 +103,53 @@ nav ul li:hover {
   }
 }
 
+#header-background {
+  background-image: url(../images/laptop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#header-container {
+  position: relative;
+  display: flex;
+  height: 900px;
+  width: 100%;
+  background-color: hsla(30, 53%, 64%, 60%);
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header-container span {
+  font-family: "Indie Flower", cursive;
+  font-size: 5rem;
+  color: #fefae0;
+  padding-right: 2rem;
+}
+
 h1 {
+  margin: 0;
+  font-family: Chivo, Arial, Helvetica, sans-serif;
+  font-size: 10rem;
+  font-weight: bold;
   padding-left: 1.25rem;
-  z-index: 1;
+  color: #fefae0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
 }
 
 section {
   margin: 20px;
   border-bottom: 1px solid black;
+}
+
+section .content {
+  display: flex;
+}
+
+h2 {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 3rem;
 }
