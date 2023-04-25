@@ -19,6 +19,8 @@
   src: url("../fonts/IBMPlexSans-Regular.ttf") format("truetype");
 }
 
+
+/* Universal Styles */
 body {
   background-color: white;
   width: 100%;
@@ -27,6 +29,30 @@ body {
   border-right: 1px solid black;
   font-family: "Plex Sans", Arial, sans-serif;
   font-size: 20px;
+}
+
+main {
+  position: relative;
+  top: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 20px;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+/* Navigation Bar Styles */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 nav ul {
@@ -53,6 +79,7 @@ nav a {
   display: block;
   text-decoration: none;
   width: 100%;
+  color: black;
 }
 
 nav ul li:hover {
@@ -74,7 +101,6 @@ nav a:visited{
 
 .dropdown ul li {
   width: 100%;
-  color: black;
   animation: open-menu 800ms ease-in-out;
 }
 
@@ -105,7 +131,10 @@ nav a:visited{
   }
 }
 
+/* Header Styles */
 #header-background {
+  position: relative;
+  top: 4rem;
   background-image: url(../images/laptop.jpg);
   background-position: center;
   background-size: cover;
@@ -116,7 +145,7 @@ nav a:visited{
   display: flex;
   height: 900px;
   width: 100%;
-  background-color: hsla(30, 53%, 64%, 60%);
+  background-image: linear-gradient(215deg, rgba(0, 0, 0, 0.4), black);
   justify-content: space-around;
   align-items: center;
 }
@@ -125,6 +154,7 @@ nav a:visited{
   font-family: "Indie Flower", cursive;
   font-size: 5rem;
   color: #fefae0;
+  background-color: hsla(30, 53%, 64%, 60%);
   padding-right: 2rem;
 }
 
@@ -133,25 +163,23 @@ h1 {
   font-family: Chivo, Arial, Helvetica, sans-serif;
   font-size: 10rem;
   font-weight: bold;
+  background-color: hsla(30, 53%, 64%, 60%);
   padding-left: 1.25rem;
   color: #fefae0;
 }
 
-main {
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  margin: 20px;
-  border-bottom: 1px solid black;
-}
-
+/* About Section */
 section .content {
   display: flex;
 }
 
-h2 {
-  font-family: Lato, Helvetica, sans-serif;
-  font-size: 3rem;
+/* Projects Section */
+#project-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
+
+/* Skills Section */
+
+
+/* Contact Section */
