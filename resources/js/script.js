@@ -1,1 +1,1 @@
-const dropDowns = document.getElementsByClassName('dropdown');
+//Nothing yet needed
