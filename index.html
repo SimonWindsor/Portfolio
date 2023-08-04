@@ -37,7 +37,7 @@
   <main>
     <section id="about-me">
       <h2>About Me</h2>
-      <div class="content about">
+      <div id="about-container">
         <div id="blurb">
           <p>I enjoying coding, making things work, and making web pages and web apps.</p>
           <p>Aspiring Full-Stack Developer. Having worked in Early Years Education for over a decade, I have decided pursue my interest in Information Technolgy, Programming, and User-centered design to pursue a career in Web Development.</p>
@@ -76,7 +76,7 @@
       <h2>Skills</h2>
       <div id="skills-container">
         <img class="skill" title="HTML5" src="resources/images/icons/HTML.svg"/>
-        <img class="skill" title="CSS3  " src="resources/images/icons/CSS.svg"/>
+        <img class="skill" title="CSS3" src="resources/images/icons/CSS.svg"/>
         <img class="skill" title="JavaScript" src="resources/images/icons/JavaScript.svg"/>
         <img class="skill" title="React" src="resources/images/icons/React-Dark.svg"/>
         <img class="skill" title="Redux" src="resources/images/icons/Redux.svg"/>
@@ -97,7 +97,9 @@
   </main>
   
   <footer>
-
+    <div>&copy;<script>
+      document.write(new Date().getFullYear());
+    </script> Simon Windsor
   </footer>
   <script src="resources/js/script.js"></script>
 </body>
