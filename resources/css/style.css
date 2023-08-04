@@ -22,7 +22,7 @@
 
 /* Universal Styles */
 html {
-  font-size: calc(6px + 0.9vw);
+  font-size: clamp(12px, 1.05vw, 25px);
   scroll-behavior: smooth;
 }
 
