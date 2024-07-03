@@ -243,7 +243,6 @@ nav a:visited{
 
 .project {
   position: relative;
-  border: 3px solid purple;
   aspect-ratio: 1;
 }
 
@@ -254,8 +253,7 @@ nav a:visited{
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   opacity: 20%;
-  border: 1px solid springgreen;
-  margin: 0;
+  transition: 600ms;
 }
 
 .front img {
@@ -286,8 +284,9 @@ nav a:visited{
   transform: rotateY(180deg);
   border: 1px solid black;
   margin: 0;
-  /* backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: 600ms;
 }
 
 .back h3 {
@@ -297,16 +296,13 @@ nav a:visited{
 
 .project:hover .front,
 .project:focus .front{
-  transition: 600ms;
+  
   transform: rotateY(180deg);
 }
    
 .project:hover .back,
 .project:focus .back {
-  transition: 600ms;
   transform: rotateY(0deg);
-  backface-visibility: visible;
-  -webkit-backface-visibility: visible;
 }
 
 @media screen and (max-width: 800px) {
