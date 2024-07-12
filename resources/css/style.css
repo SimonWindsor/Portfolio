@@ -68,6 +68,10 @@ h2 {
   font-size: 3rem;
 }
 
+a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 5.5rem;
