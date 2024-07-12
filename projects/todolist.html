@@ -9,6 +9,11 @@
 <body>
   <header>
     <nav>
+      <!-- For small and portriat screens -->
+      <div id="hamburger" onclick="showMenu()">
+        <img src="../resources/images/hamburger.png" alt="Hamburger menu icon"/>
+      </div>
+      <!-- For large and landcape screens -->
       <ul id="menu" role="presentation">
         <li><a href="../index.html#about-me">About Me</a></li>
         <li class="dropdown">
@@ -53,5 +58,7 @@
       document.write(new Date().getFullYear());
     </script> Simon Windsor
   </footer>
+  <script src="../resources/js/main.js"></script>
+  <script src="../resources/js/project-pages.js"></script>
 </body>
 </html>

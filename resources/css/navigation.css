@@ -8,6 +8,10 @@ nav {
   z-index: 100;
 }
 
+#hamburger {
+  display: none;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -69,5 +73,34 @@ nav a:visited{
   100% {
     opacity: 100%;
     transform: rotateX(0);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #hamburger {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-color: #c6d175;
+    height: 3rem;
+  }
+
+  #hamburger:hover {
+    background-color: #FEFAE0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 40%;
+  }
+
+  .dropdown ul {
+    left: 100%;
+    bottom: 3rem;
   }
 }

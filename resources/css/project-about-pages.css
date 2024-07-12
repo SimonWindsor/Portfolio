@@ -40,9 +40,10 @@
   position: relative;
   width : 35%;
   border-radius: 15px;
-  background-color: rgb(254, 250, 224, 30%);
+  background-color: rgba(254, 250, 224, 50%);
   padding: 0 2rem 0 1rem;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .panel:hover {
@@ -70,12 +71,13 @@
     height: 75%;
     margin: auto;
     border-radius: 15px;
-    background-color: rgb(254, 250, 224, 30%);
+    background-color: rgba(254, 250, 224, 50%);
   }
 
   .panel-selector {
     position: relative;
     display: flex;
+    height: 2.5rem;
   }
 
   .panel-selector input {
@@ -85,6 +87,25 @@
   .panel-selector label {
     width: 50%;
     text-align: center;
+    font-size: 2rem;
+  }
+
+  #about-label {
+    border-top-left-radius: 15px;
+  }
+
+  #screenshots-label {
+    border-top-right-radius: 15px;
+  }
+
+  .panel-selector label:hover {
+    color: rgb(254, 250, 224);
+    background-color: black;
+  }
+
+  .panel-selector input[type="radio"]:checked + label {
+    color: rgb(254, 250, 224);
+    background-color: black;
   }
 
   .panel-flex {
@@ -94,6 +115,7 @@
   .panel {
     background: none;
     width: 100%;
+    height: calc(100% - 2.5rem);
   }
 
   h2{
