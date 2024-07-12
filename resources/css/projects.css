@@ -39,7 +39,7 @@
   background-color: black;
   border-top: solid 1px red;
   border-bottom: solid 1px red;
-  z-index: 100;
+  z-index: 50;
 }
 
 .back {
@@ -63,7 +63,6 @@
 
 .project:hover .front,
 .project:focus .front{
-  
   transform: rotateY(180deg);
 }
    

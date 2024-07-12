@@ -17,14 +17,18 @@
       <ul id="menu" role="presentation">
         <li><a href="../index.html#about-me">About Me</a></li>
         <li class="dropdown">
-          <a href="../index.html#projects">Projects ˅</a>
+          <div id="project-chevron">
+            <a href="../index.html#projects" id="projects-link">Projects ˅</a>
+            <!-- Not visible on landscape and large screens. Only for mobile -->
+            <img id="chevron" src="../resources/images/chevrondown.png" onclick="openAccordian()" />
+          </div>
           <ul role="presentation">
             <li><a href="./mathsquiz.html">Maths Quiz</a></li>
             <li><a href="./todolist.html">To Do List</a></li>
           </ul>
         </li>
-        <li><a href="../index.html#skills">Skills</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
+        <li id="skills-link"><a href="../index.html#skills">Skills</a></li>
+        <li id="contact-link"><a href="../index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -33,8 +37,8 @@
     <div class="overlay">
       <h1 class="project-heading">Maths Quiz</h1>
       <div class="panel-container">
-        <div class="panel-selector">
         <!-- Panel selector below for mobile devices in portriat -->
+        <div class="panel-selector">
           <input type="radio" name="selector" id="select-about" checked onclick="selectPanel()" />
           <label id="about-label" for="select-about">About</label>
           <input type="radio" name="selector" id="select-screenshots" onclick="selectPanel()" />

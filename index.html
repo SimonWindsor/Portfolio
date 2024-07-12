@@ -6,7 +6,7 @@
   <title>Portfolio of Simon Windsor</title>
   <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="changeProjectMenu()" onresize="changeProjectMenu()">
   <header>
     <nav>
       <!-- For small and portriat screens -->
@@ -17,14 +17,18 @@
       <ul id="menu" role="presentation">
         <li><a href="#about-me">About Me</a></li>
         <li class="dropdown">
-          <a href="#projects">Projects ˅</a>
+          <div id="project-chevron">
+            <a href="#projects" id="projects-link">Projects ˅</a>
+            <!-- Not visible on landscape and large screens. Only for mobile -->
+            <img id="chevron" src="./resources/images/chevrondown.png" onclick="openAccordian()" />
+          </div>
           <ul role="presentation">
             <li><a href="./projects/mathsquiz.html">Maths Quiz</a></li>
             <li><a href="./projects/todolist.html">To Do List</a></li>
           </ul>
         </li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li id="skills-link"><a href="#skills">Skills</a></li>
+        <li id="contact-link"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div id="header-background">
