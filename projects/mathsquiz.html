@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project: Maths Quiz</title>
+  <link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="setAboutAsDefault(); checkAbout()" onresize="setAboutAsDefault()">
+  <header>
+    <nav>
+      <ul id="menu" role="presentation">
+        <li><a href="../index.html#about-me">About Me</a></li>
+        <li class="dropdown">
+          <a href="../index.html#projects">Projects ˅</a>
+          <ul role="presentation">
+            <li><a href="./mathsquiz.html">Maths Quiz</a></li>
+            <li><a href="./todolist.html">To Do List</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-page-background">
+    <div class="overlay">
+      <h1 class="project-heading">Maths Quiz</h1>
+      <div class="panel-container">
+        <div class="panel-selector">
+        <!-- Panel selector below for mobile devices in portriat -->
+          <input type="radio" name="selector" id="select-about" checked onclick="selectPanel()" />
+          <label for="select-about">About</label>
+          <input type="radio" name="selector" id="select-screenshots" onclick="selectPanel()" />
+          <label for="select-screenshots">Screenshots</label>
+        </div>
+        <div class="panel-flex">
+          <div class="panel about-project">
+            <h2>About Project</h2>
+            <p>
+              This was my first independent project. My daughter was 5 years old at the time and learning basic mathematics and using formal abstract notation.
+            </p>
+          </div>
+          <div class="panel screenshots">
+            <h2>Screenshots</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="project-footer">
+    <div>&copy;<script>
+      document.write(new Date().getFullYear());
+    </script> Simon Windsor
+  </footer>
+  <script src="../resources/js/script.js"></script>
+</body>
+</html>

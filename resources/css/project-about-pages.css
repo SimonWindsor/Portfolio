@@ -1,0 +1,108 @@
+/* Styles for Project About Pages */
+.project-heading {
+  position: relative;
+  color: #fefae0;
+  z-index: 10;
+}
+
+.project-page-background {
+  position: relative;
+  top: 3rem;
+  height: calc(100vh - 3rem);
+  background-image: url(../images/laptop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  height: calc(100vh - 3rem);
+  width: 100%;
+  background-image: linear-gradient(215deg, rgba(0, 0, 0, 0.4), black);
+}
+
+.panel-selector {
+  display: none;
+}
+
+.panel-container {
+  position: relative;
+  height: 75%;
+}
+
+.panel-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.panel {
+  position: relative;
+  width : 35%;
+  border-radius: 15px;
+  background-color: rgb(254, 250, 224, 30%);
+  padding: 0 2rem 0 1rem;
+  box-sizing: border-box;
+}
+
+.panel:hover {
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 1200px) {
+  .panel {
+    width: 45%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .project-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .panel-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width : 90%;
+    height: 75%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: rgb(254, 250, 224, 30%);
+  }
+
+  .panel-selector {
+    position: relative;
+    display: flex;
+  }
+
+  .panel-selector input {
+    display: none;
+  }
+
+  .panel-selector label {
+    width: 50%;
+    text-align: center;
+  }
+
+  .panel-flex {
+    top: 2rem;
+  }
+
+  .panel {
+    background: none;
+    width: 100%;
+  }
+
+  h2{
+    display: none;
+  }
+}
+
+.project-footer{
+  position: absolute;
+  bottom: 1rem;
+  color: #fefae0;
+}

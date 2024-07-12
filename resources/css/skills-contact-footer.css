@@ -1,0 +1,61 @@
+/* Skills Section */
+#skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 6rem;
+  height: 6rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .skill {
+    width: 25%
+  }
+}
+
+/* Contact Section */
+#contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#contact-container img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1.5rem;
+  transition: 200ms ease-out;
+}
+
+#contact-container span {
+  width: 6rem;
+  font-size: 1.5rem;
+}
+
+#contact-container img:hover{
+  box-shadow: 0.25rem 0.25rem 0.25rem lightslategray;
+  transform: translate(-0.25rem, -0.25rem);
+}
+
+@media screen and (orientation: portrait) {
+  #contact-container {
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+  }
+
+  #contact-container span {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Footer */
+footer {
+  position: relative;
+  margin: 6rem 1rem 1rem;
+}

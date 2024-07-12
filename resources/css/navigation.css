@@ -1,0 +1,73 @@
+/* Navigation Bar Styles */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+nav ul li {
+  float: left;
+  background-color: #c6d175;
+  color: black;
+  cursor: pointer;
+  width: 25%;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: #FEFAE0;
+}
+
+nav a:visited{
+  color: inherit;
+}
+
+.dropdown ul {
+  display: none;
+}
+
+.dropdown:hover ul {
+  position: relative;
+  display: block;
+}
+
+.dropdown ul li {
+  width: 100%;
+  animation: open-menu 800ms ease-in-out;
+}
+
+.dropdown ul li:hover {
+  background-color: FEFAE0;
+}
+
+@keyframes open-menu {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 100%;
+    transform: rotateX(0);
+  }
+}
