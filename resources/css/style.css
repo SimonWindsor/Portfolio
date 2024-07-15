@@ -3,7 +3,7 @@
 @import "header-and-about.css";
 @import "projects.css";
 @import "skills-contact-footer.css";
-@import "project-about-pages.css";
+/* project-about-pages.css is not to be linked here as to keep it separate from main page */
 
 /* Define Fonts */
 @font-face {
