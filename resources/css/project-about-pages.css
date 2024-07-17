@@ -1,6 +1,10 @@
 /* Styles for Project About Pages.
   This is only linked from html files for project pages and not to be used on main page.
 */
+body {
+  overflow: hidden;
+}
+
 .project-heading {
   position: relative;
   font-size: 6rem;
