@@ -30,6 +30,6 @@ function selectPanel() {
 /* For enabling smooth scrolling in the panels on touch devices so that 
   scrolling of the whole page is prevented.
 */
-document.querySelector(panel-container).addEventListener('touchmove', (e) => {
+document.selectElementsByClassName(panel-container)[0].addEventListener('touchmove', (e) => {
   e.stopPropagation();
 });
