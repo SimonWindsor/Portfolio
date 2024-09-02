@@ -50,12 +50,12 @@ body {
   background-color: rgba(254, 250, 224, 50%);
   padding: 0 2rem 0 1rem;
   box-sizing: border-box;
-  overflow: auto;
+  overflow-y: hidden;
 }
 
-/* .panel:hover {
+.panel:hover {
   overflow-y: scroll;
-} */
+}
 
 .project-footer{
   position: absolute;
@@ -145,6 +145,7 @@ body {
     background: none;
     width: 100%;
     max-height: calc(96% - 3rem);
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
   }
 
