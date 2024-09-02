@@ -100,7 +100,6 @@ body {
     transform: translateX(-50%);
     border-radius: 15px;
     background-color: rgba(254, 250, 224, 50%);
-    -webkit-overflow-scrolling: touch;
   }
 
   .panel-selector {
@@ -145,7 +144,8 @@ body {
   .panel {
     background: none;
     width: 100%;
-    max-height: calc(96% - 2.5rem);
+    max-height: calc(96% - 3rem);
+    -webkit-overflow-scrolling: touch;
   }
 
   h2{
