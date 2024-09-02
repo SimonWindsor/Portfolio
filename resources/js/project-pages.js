@@ -26,3 +26,10 @@ function selectPanel() {
     document.getElementsByClassName('screenshots')[0].style.display = 'block';
   }
 }
+
+/* For enabling smooth scrolling in the panels on touch devices so that 
+  scrolling of the whole page is prevented.
+*/
+document.getElementsByClassName(panel).addEventListener('touchmove', e => {
+  e.stopPropagation();
+});

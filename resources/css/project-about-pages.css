@@ -100,6 +100,7 @@ body {
     transform: translateX(-50%);
     border-radius: 15px;
     background-color: rgba(254, 250, 224, 50%);
+    -webkit-overflow-scrolling: touch;
   }
 
   .panel-selector {
