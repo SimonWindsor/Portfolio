@@ -22,8 +22,6 @@ function changeProjectMenu() {
 function openAccordian() {
   const projectsMenu = document.getElementsByClassName('dropdown')[0];
   const chevron = document.getElementById('chevron');
-  const skills = document.getElementById('skills-link');
-  const contact = document.getElementById('contact-link');
 
   if (projectsMenu.classList.contains('accordian')) {
     projectsMenu.classList.remove('accordian');
