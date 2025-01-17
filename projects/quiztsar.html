@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project: Quiz-Tsar</title>
+  <link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../resources/css/project-about-pages.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="setAboutAsDefault(); checkAbout()" onresize="setAboutAsDefault(); changeProjectMenu()">
+  <header>
+    <nav>
+      <!-- For small and portriat screens -->
+      <div id="hamburger" onclick="showMenu()">
+        <img src="../resources/images/hamburger.png" alt="Hamburger menu icon"/>
+      </div>
+      <!-- For large and landcape screens -->
+      <ul id="menu" role="presentation">
+        <li><a href="../index.html#about-me">About Me</a></li>
+        <li class="dropdown">
+          <div id="project-chevron">
+            <a href="../index.html#projects" id="projects-link">Projects ˅</a>
+            <!-- Not visible on landscape and large screens. Only for mobile -->
+            <img id="chevron" src="../resources/images/chevrondown.png" alt="open or close projects sub-menu" onclick="openAccordian()" />
+          </div>
+          <ul role="presentation">
+            <li><a href="./mathsquiz.html">Maths Quiz</a></li>
+            <li><a href="./todolist.html">To Do List</a></li>
+          </ul>
+        </li>
+        <li id="skills-link"><a href="../index.html#skills">Skills</a></li>
+        <li id="contact-link"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-page-background">
+    <div class="overlay">
+      <h1 class="project-heading">Quiz-Tsar</h1>
+      <div class="panel-container">
+        <!-- Panel selector below for mobile devices in portriat -->
+        <div class="panel-selector">
+          <input type="radio" name="selector" id="select-about" checked onclick="selectPanel()" />
+          <label id="about-label" for="select-about">About</label>
+          <input type="radio" name="selector" id="select-screenshots" onclick="selectPanel()" />
+          <label id="screenshots-label" for="select-screenshots">Screenshots</label>
+        </div>
+        <div class="panel-flex">
+          <div class="panel about-project">
+            <h2>About Project</h2>
+            <p>
+              My first independent React-Redux project. I decided to make a quiz game that would utilize an API to obtain some trivia quesions. The title is playing on the word "quizzer", and when I thought of "Quiz-Tsar" as being the title, I chose to design the aesthetics of the game around Russian royalty.
+            </p>
+            <p>
+              The app consists of a simple and easy-to-use interface where the user is guided through the process. After the user begins, they are provided with simple game customization options including number of questions, trivia categories, difficulty and question types.
+            </p>
+            <p>
+              When a user is playing a quiz, the app utlizes an API from <a href="https://opentdb.com/" target="_blank">Open Trivia Database</a> to obtain a set of questions based on the user's selection. The app then lists the question one-by-one using buttons on screen for the multiple choice answers. The user is notified of correct or incorrect answers with pop up messages. After all questions are answered the final score is displayed.
+            </p>
+            <p>
+              My third project overall. What I had to consider in this app was error handling, in case the API was used incorrectly or in case of any other errors. The app uses pop up boxes to give feedback in case of any such incidences. Utilization of the state managment of Redux enabled separation of concerns and could assist scalability of the game for added features in future.
+            </p>
+            <p>
+              A potential future feature may be the option to play with friends. Another may be to create a game consisting of a number of quizzes where the game tracks and compares your scores between the quizzes you play. This was a feature I thought of in the beginning but chose not to implement at first.
+            </p>
+          </div>
+          <div class="panel screenshots">
+            <h2>Screenshots</h2>
+            <img src="../resources/images/project imgs/todolist/list.png" alt="An example of To-Do List Usage with tasks" />
+            <figcaption>Displaying Tasks</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/todolist/list2.png" alt="Mobile view of To-DO List. User is attemptingto delete a task" />
+            <figcaption>Attempting to Delete a Task</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/todolist/task-creation.png" alt="Creating a task with subtasks. User's task in 'Invitations' and subtasks are people's names" />
+            <figcaption>Creating a Detailed Task with Subtasks</figcaption>
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="project-footer">
+    <div>&copy;<script>
+      document.write(new Date().getFullYear());
+    </script> Simon Windsor
+  </footer>
+  <script src="../resources/js/main.js"></script>
+  <script src="../resources/js/project-pages.js"></script>
+</body>
+</html>
