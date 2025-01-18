@@ -7,7 +7,7 @@
   <link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
   <link href="../resources/css/project-about-pages.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="setAboutAsDefault(); checkAbout()" onresize="setAboutAsDefault(); changeProjectMenu()">
+<body onload="setAboutAsDefault(); checkAbout(); getOtherProjectsForMenu()" onresize="setAboutAsDefault(); changeProjectMenu()">
   <header>
     <nav>
       <!-- For small and portriat screens -->
@@ -23,9 +23,8 @@
             <!-- Not visible on landscape and large screens. Only for mobile -->
             <img id="chevron" src="../resources/images/chevrondown.png" alt="open or close projects sub-menu" onclick="openAccordian()" />
           </div>
-          <ul role="presentation">
-            <li><a href="./mathsquiz.html">Maths Quiz</a></li>
-            <li><a href="./todolist.html">To Do List</a></li>
+          <ul id="dropdown-options" role="presentation">
+            <!-- getProjectMenu() in main.js will populate this -->
           </ul>
         </li>
         <li id="skills-link"><a href="../index.html#skills">Skills</a></li>
@@ -66,14 +65,29 @@
           </div>
           <div class="panel screenshots">
             <h2>Screenshots</h2>
-            <img src="../resources/images/project imgs/todolist/list.png" alt="An example of To-Do List Usage with tasks" />
-            <figcaption>Displaying Tasks</figcaption>
+            <img src="../resources/images/project imgs/quiztsar/app_desktop.png" alt="Opening screen on a desktop computer" />
+            <figcaption>Opening screen on desktop</figcaption>
             <br><br>
-            <img src="../resources/images/project imgs/todolist/list2.png" alt="Mobile view of To-DO List. User is attemptingto delete a task" />
-            <figcaption>Attempting to Delete a Task</figcaption>
+            <img src="../resources/images/project imgs/quiztsar/options_desktop.png" alt="Options selection on a desktop computer" />
+            <figcaption>Options selection on desktop</figcaption>
             <br><br>
-            <img src="../resources/images/project imgs/todolist/task-creation.png" alt="Creating a task with subtasks. User's task in 'Invitations' and subtasks are people's names" />
-            <figcaption>Creating a Detailed Task with Subtasks</figcaption>
+            <img src="../resources/images/project imgs/quiztsar/question_desktop.png" alt="Quiz question on a desktop computer" />
+            <figcaption>Quiz question on desktop</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/quiztsar/question_desktop_2.png" alt="Another quiz question on a desktop computer" />
+            <figcaption>Quiz question on desktop</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/quiztsar/app_mobile.jpg" alt="Opening screen on a mobile screen" />
+            <figcaption>Opening screen on mobile</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/quiztsar/options_mobile.jpg" alt="Options selection on a mobile screen" />
+            <figcaption>Opening selection on mobile</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/quiztsar/question_mobile.jpg" alt="Quiz question on a mobile screen" />
+            <figcaption>Quiz question on mobile</figcaption>
+            <br><br>
+            <img src="../resources/images/project imgs/quiztsar/results_mobile.jpg" alt="Final score on a mobile screen" />
+            <figcaption>Final score on mobile</figcaption>
             <br><br>
           </div>
         </div>

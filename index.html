@@ -6,7 +6,7 @@
   <title>Portfolio of Simon Windsor</title>
   <link href="resources/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="changeProjectMenu()" onresize="changeProjectMenu()">
+<body onload="changeProjectMenu(); getProjectsMenu()" onresize="changeProjectMenu()">
   <header>
     <nav>
       <!-- For small and portriat screens -->
@@ -22,9 +22,8 @@
             <!-- Not visible on landscape and large screens. Only for mobile -->
             <img id="chevron" src="./resources/images/chevrondown.png" alt="open or close projects sub-menu" onclick="openAccordian()" />
           </div>
-          <ul role="presentation">
-            <li><a href="./projects/mathsquiz.html">Maths Quiz</a></li>
-            <li><a href="./projects/todolist.html">To Do List</a></li>
+          <ul id="dropdown-options" role="presentation">
+            <!-- getProjectMenu() in main.js will populate this -->
           </ul>
         </li>
         <li id="skills-link"><a href="#skills">Skills</a></li>

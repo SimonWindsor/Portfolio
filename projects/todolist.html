@@ -7,7 +7,7 @@
   <link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
   <link href="../resources/css/project-about-pages.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="setAboutAsDefault(); checkAbout()" onresize="setAboutAsDefault(); changeProjectMenu()">
+<body onload="setAboutAsDefault(); checkAbout(); getOtherProjectsForMenu()" onresize="setAboutAsDefault(); changeProjectMenu()">
   <header>
     <nav>
       <!-- For small and portriat screens -->
@@ -23,9 +23,8 @@
             <!-- Not visible on landscape and large screens. Only for mobile -->
             <img id="chevron" src="../resources/images/chevrondown.png" alt="open or close projects sub-menu" onclick="openAccordian()" />
           </div>
-          <ul role="presentation">
-            <li><a href="./mathsquiz.html">Maths Quiz</a></li>
-            <li><a href="./todolist.html">To Do List</a></li>
+          <ul id="dropdown-options" role="presentation">
+            <!-- getProjectMenu() in main.js will populate this -->
           </ul>
         </li>
         <li id="skills-link"><a href="../index.html#skills">Skills</a></li>
