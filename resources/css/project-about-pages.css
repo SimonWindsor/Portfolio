@@ -5,6 +5,14 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
 .project-heading {
   position: relative;
   font-size: 6rem;
@@ -61,6 +69,29 @@ body {
   position: absolute;
   bottom: 0.5rem;
   color: #fefae0;
+}
+
+.about-project span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-project span a {
+  height: 1.5rem;
+  width: 40%;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  background-color: #d4a373;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about-project span a:hover {
+  background-color: #FEFAE0;
+}
+
+.about-project span a:visited {
+ color: inherit; 
 }
 
 .screenshots {
