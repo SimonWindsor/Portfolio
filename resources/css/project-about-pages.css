@@ -5,6 +5,14 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
 .project-heading {
   position: relative;
   font-size: 6rem;
@@ -68,7 +76,7 @@ body {
   justify-content: space-between;
 }
 
-.about-project a {
+.about-project span a {
   height: 1.5rem;
   width: 40%;
   border-radius: 0.75rem;
@@ -78,11 +86,11 @@ body {
   cursor: pointer;
 }
 
-.about-project a:hover {
+.about-project span a:hover {
   background-color: #FEFAE0;
 }
 
-.about-project a:visited {
+.about-project span a:visited {
  color: inherit; 
 }
 
