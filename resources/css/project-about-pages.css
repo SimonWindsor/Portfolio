@@ -63,6 +63,29 @@ body {
   color: #fefae0;
 }
 
+.about-project span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-project a {
+  height: 1.5rem;
+  width: 40%;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  background-color: #d4a373;
+  text-align: center;
+  cursor: pointer;
+}
+
+.about-project a:hover {
+  background-color: #FEFAE0;
+}
+
+.about-project a:visited {
+ color: inherit; 
+}
+
 .screenshots {
   text-align: center;
 }
