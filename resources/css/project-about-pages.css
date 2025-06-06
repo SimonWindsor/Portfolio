@@ -71,12 +71,14 @@ a:visited {
   color: #fefae0;
 }
 
-.about-project span {
+.about-project span,
+.mini-project span {
   display: flex;
   justify-content: space-between;
 }
 
-.about-project span a {
+.about-project span a,
+.mini-project span a {
   height: 1.5rem;
   width: 40%;
   border-radius: 0.75rem;
@@ -110,13 +112,17 @@ a:visited {
 }
 
 .screenshots img {
-  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 figcaption {
   font-size: 1.5rem;
   font-style: italic;
+}
+
+.project-footer {
+  margin: 1rem 1rem 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -138,7 +144,7 @@ figcaption {
     flex-direction: column;
     position: relative;
     width : 90%;
-    height: 75%;
+    height: 85%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 15px;

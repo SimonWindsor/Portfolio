@@ -1,6 +1,7 @@
 // Populates the projects menu on index.html only
 function getProjectsMenu() {
   document.getElementById('dropdown-options').innerHTML = `
+    <li><a href="./projects/miniprojects.html">Mini Projects</a></li>
     <li><a href="./projects/mathsquiz.html">Maths Quiz</a></li>
     <li><a href="./projects/todolist.html">To Do List</a></li>
     <li><a href="./projects/quiztsar.html">Quiz-Tsar</a></li>

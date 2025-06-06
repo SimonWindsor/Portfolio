@@ -1,0 +1,81 @@
+.panel {
+  position: relative;
+  margin: auto;
+  width : 97%;
+  height: 77%;
+  border-radius: 15px;
+  background-color: rgba(254, 250, 224, 50%);
+  padding: 0 2rem 0 1rem;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.mini-project {
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+.mini-project-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blurb-and-links {
+  position: relative;
+  width: 30%;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 30%;
+}
+
+.img-wrapper img {
+  position: relative;
+  width: 80%;
+}
+
+@media screen and (orientation: portrait) {
+  .panel {
+    height: 85%;
+  }
+
+  /* In other project pages, h2 is not displayed on mobile screens but they need
+  to be for mini-projects. */
+  h2{
+    display: block;
+  }
+
+  .mini-project-details {
+    display:inline-flex;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .blurb-and-links {
+    width: 100%;
+  }
+
+  .img-wrapper {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    transform: translateX(80%);
+  }
+
+  /* .img-wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 99%;
+    background-color: black;
+    content: "";
+  } */
+
+  .img-wrapper img {
+    transform: translateX(2rem);
+  }
+}
