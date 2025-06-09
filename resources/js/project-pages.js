@@ -40,8 +40,27 @@ function selectPanel() {
 /* For enabling smooth scrolling in the panels on touch devices so that 
   scrolling of the whole page is prevented.
 */
-document.querySelectorAll('panel').forEach(panel => {
+document.querySelectorAll('.panel').forEach(panel => {
   panel.addEventListener('touchmove', (e) => {
     e.stopPropagation();
+  });
+});
+
+/* Used in mini-projects. This is for opening the full image of the
+  mini-project by getting the value from an img-opener and showing
+  the corresponding img-wrapper.
+ */
+document.querySelectorAll('.img-opener').forEach(opener => {
+  opener.addEventListener('click', (e) => {
+    const value = e.currentTarget.getAttribute('value');
+    document.getElementById(value).style.display = 'block';
+  });
+});
+
+// Closes img-wrapper
+document.querySelectorAll('.close').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const value = e.currentTarget.getAttribute('value');
+    document.getElementById(value).style.display = 'none';
   });
 });

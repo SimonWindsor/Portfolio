@@ -71,8 +71,7 @@ a:visited {
   color: #fefae0;
 }
 
-.about-project span,
-.mini-project span {
+.about-project span {
   display: flex;
   justify-content: space-between;
 }
@@ -113,6 +112,7 @@ a:visited {
 
 .screenshots img {
   height: 100%;
+  max-width: 100%;
   text-align: center;
 }
 
