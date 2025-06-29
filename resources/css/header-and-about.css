@@ -73,7 +73,7 @@
 
   #about-container img {
     position: relative;
-    width: 60%;
+    width: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
