@@ -52,7 +52,6 @@ main {
 section {
   margin: 1rem;
   padding: 3rem;
-  height: fit-content;
   border-bottom: 1px solid black;
 }
 
