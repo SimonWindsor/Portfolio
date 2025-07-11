@@ -132,3 +132,12 @@
     padding-top: 0.25rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .back a {
+    font-size: 1.25rem;
+    height: 1.75rem;
+    border-radius: 0.825rem;
+    padding-top: 0.125rem;
+  }
+}
