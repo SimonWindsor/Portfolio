@@ -107,7 +107,7 @@
   transform: rotateY(0deg);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #project-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -115,6 +115,8 @@
 
   .back a {
     height: 2.5rem;
+    border-radius: 1.25rem;
+    padding-top: 0.5rem;
   }
 }
 
@@ -122,5 +124,11 @@
   #project-container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .back a {
+    height: 2rem;
+    border-radius: 1rem;
+    padding-top: 0.25rem;
   }
 }
